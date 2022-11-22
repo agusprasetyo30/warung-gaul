@@ -9,3 +9,6 @@
 - Visual Studio
 - C#
 - Database : SQL Server
+
+## Asset wkwk
+<img src="nurhadi.png" width="100%">
