@@ -31,25 +31,12 @@ namespace WarungGaul
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            String jk = "";
-
             SqlConnection conn = koneksi();
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
 
-            if(comboSex.Text == "Laki-laki")
-            {
-                jk = "L";
-            }
-
-            if (comboSex.Text == "Perempuan")
-            {
-                jk = "P";
-            }
-
-            cmd.CommandText = "INSERT INTO customer (name, sex) VALUES ('" +
-                txtName.Text + "','" +
-                jk + "')";
+            cmd.CommandText = "INSERT INTO customer (name) VALUES ('" +
+                txtName.Text + "')";
 
             cmd.ExecuteNonQuery();
             conn.Close();
@@ -66,7 +53,7 @@ namespace WarungGaul
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
 
-            cmd.CommandText = "SELECT id AS 'ID', name AS 'Nama', sex as 'Jenis Kelamin' FROM customer";
+            cmd.CommandText = "SELECT id AS 'ID', name AS 'Nama Pelanggan' FROM customer";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -78,25 +65,12 @@ namespace WarungGaul
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            String jk = "";
-
             SqlConnection conn = koneksi();
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
 
-            if (comboSex.Text == "Laki-laki")
-            {
-                jk = "L";
-            }
-
-            if (comboSex.Text == "Perempuan")
-            {
-                jk = "P";
-            }
-
             cmd.CommandText = "UPDATE customer SET " +
-                "name = '" + txtName.Text + "', " +
-                "sex = '" + jk + "' WHERE id = " + Convert.ToInt32(txtIdCustomer.Text);
+                "name = '" + txtName.Text + "'" + " WHERE id = " + Convert.ToInt32(txtIdCustomer.Text);
 
             cmd.ExecuteNonQuery();
             conn.Close();
@@ -111,26 +85,17 @@ namespace WarungGaul
         {
             txtName.Text = "";
             txtIdCustomer.Text = "";
-            comboSex.Text = "";
         }
 
         private void tblCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtIdCustomer.Text = tblCustomer.CurrentRow.Cells[0].Value.ToString();
             txtName.Text = tblCustomer.CurrentRow.Cells[1].Value.ToString();
+        }
 
-            if (tblCustomer.CurrentRow.Cells[2].Value.ToString() == "L")
-            {
-                comboSex.Text = "Laki-laki";
-            }
-
-            if (tblCustomer.CurrentRow.Cells[2].Value.ToString() == "P")
-            {
-                comboSex.Text = "Perempuan";
-            }
-
-            
-            
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

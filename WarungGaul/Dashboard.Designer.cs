@@ -82,7 +82,7 @@
             this.btnListCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnListCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnListCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListCustomer.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListCustomer.Location = new System.Drawing.Point(20, 19);
             this.btnListCustomer.Name = "btnListCustomer";
             this.btnListCustomer.Size = new System.Drawing.Size(141, 52);
@@ -112,13 +112,14 @@
             this.btnPenjualan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnPenjualan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnPenjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPenjualan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPenjualan.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPenjualan.Location = new System.Drawing.Point(20, 81);
             this.btnPenjualan.Name = "btnPenjualan";
             this.btnPenjualan.Size = new System.Drawing.Size(296, 52);
             this.btnPenjualan.TabIndex = 6;
             this.btnPenjualan.Text = "Daftar Penjualan";
             this.btnPenjualan.UseVisualStyleBackColor = false;
+            this.btnPenjualan.Click += new System.EventHandler(this.btnPenjualan_Click);
             // 
             // btnPemesanan
             // 
@@ -128,7 +129,7 @@
             this.btnPemesanan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnPemesanan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnPemesanan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPemesanan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPemesanan.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPemesanan.Location = new System.Drawing.Point(20, 142);
             this.btnPemesanan.Name = "btnPemesanan";
             this.btnPemesanan.Size = new System.Drawing.Size(296, 52);
@@ -145,7 +146,7 @@
             this.btnListItem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnListItem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnListItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListItem.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListItem.Location = new System.Drawing.Point(175, 19);
             this.btnListItem.Name = "btnListItem";
             this.btnListItem.Size = new System.Drawing.Size(141, 52);
@@ -162,7 +163,7 @@
             this.btnQuote.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnQuote.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnQuote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuote.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuote.Location = new System.Drawing.Point(25, 337);
             this.btnQuote.Name = "btnQuote";
             this.btnQuote.Size = new System.Drawing.Size(152, 28);

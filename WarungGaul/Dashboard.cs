@@ -40,5 +40,11 @@ namespace WarungGaul
             Pemesanan pemesanan = new Pemesanan();
             pemesanan.Show();
         }
+
+        private void btnPenjualan_Click(object sender, EventArgs e)
+        {
+            Penjualan penjualan = new Penjualan();
+            penjualan.Show();
+        }
     }
 }

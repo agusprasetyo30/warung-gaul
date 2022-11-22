@@ -78,6 +78,7 @@
             this.tblItem.AllowUserToOrderColumns = true;
             this.tblItem.AllowUserToResizeColumns = false;
             this.tblItem.AllowUserToResizeRows = false;
+            this.tblItem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tblItem.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.tblItem.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.tblItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -194,7 +195,7 @@
             this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(458, 301);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(137, 42);
@@ -220,7 +221,7 @@
             this.btnEdit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(458, 349);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(137, 42);
@@ -237,7 +238,7 @@
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Location = new System.Drawing.Point(458, 397);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(137, 42);

@@ -57,6 +57,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_warungDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DetailPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailPenjualan.Designer.cs">
+      <DependentUpon>DetailPenjualan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Koneksi.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -76,6 +82,12 @@
     <Compile Include="Pemesanan.Designer.cs">
       <DependentUpon>Pemesanan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Penjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan.Designer.cs">
+      <DependentUpon>Penjualan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quote.cs">
@@ -90,11 +102,17 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetailPenjualan.resx">
+      <DependentUpon>DetailPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Item.resx">
       <DependentUpon>Item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pemesanan.resx">
       <DependentUpon>Pemesanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan.resx">
+      <DependentUpon>Penjualan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -34,8 +34,6 @@
             this.txtIdCustomer = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboSex = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -77,30 +75,6 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Daftar Pelanggan";
             // 
-            // comboSex
-            // 
-            this.comboSex.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboSex.Items.AddRange(new object[] {
-            "Laki-laki",
-            "Perempuan"});
-            this.comboSex.Location = new System.Drawing.Point(19, 129);
-            this.comboSex.Name = "comboSex";
-            this.comboSex.Size = new System.Drawing.Size(378, 28);
-            this.comboSex.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(15, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 22);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Jenis Kelamin";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -123,15 +97,13 @@
             // groupBox1
             // 
             this.groupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
-            this.groupBox1.Controls.Add(this.comboSex);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.groupBox1.Location = new System.Drawing.Point(26, 122);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(417, 172);
+            this.groupBox1.Size = new System.Drawing.Size(417, 111);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
@@ -142,9 +114,10 @@
             this.tblCustomer.AllowUserToOrderColumns = true;
             this.tblCustomer.AllowUserToResizeColumns = false;
             this.tblCustomer.AllowUserToResizeRows = false;
+            this.tblCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tblCustomer.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.tblCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.tblCustomer.Location = new System.Drawing.Point(26, 300);
+            this.tblCustomer.Location = new System.Drawing.Point(26, 248);
             this.tblCustomer.MultiSelect = false;
             this.tblCustomer.Name = "tblCustomer";
             this.tblCustomer.ReadOnly = true;
@@ -175,13 +148,14 @@
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(353, 375);
+            this.btnBack.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(353, 323);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(90, 31);
             this.btnBack.TabIndex = 19;
             this.btnBack.Text = "Kembali";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnEdit
             // 
@@ -191,8 +165,8 @@
             this.btnEdit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(353, 338);
+            this.btnEdit.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Location = new System.Drawing.Point(353, 286);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(90, 31);
             this.btnEdit.TabIndex = 18;
@@ -208,8 +182,8 @@
             this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(353, 300);
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(353, 248);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(90, 31);
             this.btnSave.TabIndex = 17;
@@ -222,7 +196,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(482, 416);
+            this.ClientSize = new System.Drawing.Size(465, 367);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSave);
@@ -248,8 +222,6 @@
         private System.Windows.Forms.TextBox txtIdCustomer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboSex;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.GroupBox groupBox1;
